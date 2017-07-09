@@ -11,10 +11,14 @@ export class BookComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.Books = new Array<Book>();
-    this.Books[0] = new Book();
-    this.Books[0].Title = 'The Top 1%';
-    this.Books[0].Author = 'Dan Strutzel';
+    this.Books = [
+      {
+        Title : 'The Top 1%', Author : 'Dan Strutzel', Description: 'Lorem ipsum'
+      },
+      {
+        Title: 'Think and Grow Rich', Author: 'Napoleon Hill', Description: 'Lorem ipsum'
+      }
+    ]
   }
 
 }

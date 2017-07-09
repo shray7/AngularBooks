@@ -1,5 +1,5 @@
 
-<h2>{{Books[0].Title}}</h2>
-<h3>{{Books[0].Author}}</h3>
-
-
+<div class='card card-block' *ngFor="let book of Books" >
+<div class='card-title'>{{book.Title}}</div>
+<div class='card-text'>{{book.Author}}</div>
+</div>
